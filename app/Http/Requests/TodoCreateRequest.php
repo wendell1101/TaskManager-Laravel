@@ -24,17 +24,17 @@ class TodoCreateRequest extends FormRequest
     public function rules()
     {
         return [
-            'title'=>'required|max:20',
+            'title'=>'required|max:255',
             'description'=>'required|max:255',
         ];
     }
 
     public function messages() {
         return[
-            'title.required'=> 'Todo Title is required',
-            'title.max' => 'Todo title should not be greater than 20 characters',
-            'description.required' => 'Todo description is required',
-            'description.max' => 'Todo description should not be greater than 255 characters',
+            'title.required'=> 'Task title is required',
+            'title.max' => 'Task title should not be greater than 255 characters',
+            'description.required' => 'Task description is required',
+            'description.max' => 'Task description should not be greater than 255 characters',
         ];
     }
 }
