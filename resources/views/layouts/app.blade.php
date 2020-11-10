@@ -34,6 +34,7 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <title>Task Manager</title>
 
     @livewireStyles
 </head>
